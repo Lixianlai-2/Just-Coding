@@ -19,5 +19,5 @@ let createSquare = function (width) {
 };
 
 for (let i = 0; i < 10; i++) {
-  square[i] = createSquare(squareWidth[i]);
+  square[i] = createSquare[squareWidth[i]];
 }

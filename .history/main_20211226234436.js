@@ -14,10 +14,12 @@ let squarePrototype = {
 let createSquare = function (width) {
   // 以squarePrototype为原型创造一个空对象
   let obj = Object.create(squarePrototype);
-  // 给空对象增加一个属性，值为参数width
   obj.width = width;
 };
 
 for (let i = 0; i < 10; i++) {
-  square[i] = createSquare(squareWidth[i]);
+  // 将square[0]到square[9]的原型都指定为squarePrototype，这样就有面积函数和周长函数了
+  square[i] = Object.create(squarePrototype);
+  // 然后设置正方形的边长
+  square[i].width = squareWidth[i];
 }
