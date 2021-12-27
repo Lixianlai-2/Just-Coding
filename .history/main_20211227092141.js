@@ -26,4 +26,6 @@ createSquare.squarePrototype = {
 
 for (let i = 0; i < 10; i++) {
   square[i] = createSquare(squareWidth[i]);
+
+  console.log(squareWidth[i]);
 }
