@@ -1,4 +1,4 @@
-let squareList = [];
+let square = [];
 
 let squareWidth = [3, 4, 5, 6, 7, 8, 8, 9, 9, 2];
 
@@ -15,6 +15,6 @@ Square.prototype.getLength = function () {
   return this.width * 4;
 };
 
-for (let i = 0; i < 10; i++) {
-  squareList[i] = new Square(squareWidth[i]);
+for (let i = 0; i < 12; i++) {
+  square[i] = new Square(squareWidth[i]);
 }

@@ -17,4 +17,5 @@ Square.prototype.getLength = function () {
 
 for (let i = 0; i < 10; i++) {
   squareList[i] = new Square(squareWidth[i]);
+  console.log(squareList[i].constructor);
 }
