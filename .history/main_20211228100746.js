@@ -4,13 +4,13 @@ class CreateRectangle {
     this.height = height;
   }
 
-  getArea() {
+  getArea = function () {
     return this.width * this.height;
-  }
+  };
 
-  getLength() {
+  getLength = function () {
     return this.width * 2 + this.height * 2;
-  }
+  };
 }
 
 let rectAngle1 = new CreateRectangle(3, 4);
