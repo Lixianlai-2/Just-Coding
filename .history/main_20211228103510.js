@@ -3,10 +3,6 @@ function Person(name, age) {
   this.age = age;
 }
 
-Person.prototype.sayHi = function () {
-  console.log(`你好，我叫${this.name},今年${this.age}岁`);
-};
-
 let person = new Person("frank", 18);
 person.name === "frank"; // true
 person.age === 18; // true
