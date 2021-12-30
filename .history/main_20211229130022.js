@@ -1,6 +1,6 @@
 let str = "12345";
 
-let strToArr = str.split("");
+let strToArr = str.split();
 console.log(strToArr);
 
 let strReverseArr = strToArr.reverse();
