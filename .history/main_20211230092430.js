@@ -37,4 +37,5 @@ arr.sort(function (a, b) {
 });
 
 // 箭头函数自动return了
+
 arr.sort((a, b) => a - b);

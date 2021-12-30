@@ -23,18 +23,3 @@ arr.sort(function (a, b) {
     return 0;
   }
 });
-
-// 正序简化
-arr.sort(function (a, b) {
-  // 如果a>b，return 正数，a放前面；如果a<b，return 负数，b放后面；如果a = b，return 0，位置不变
-  return a - b;
-});
-
-// 倒序简化
-arr.sort(function (a, b) {
-  // 如果b>a，return 正数，b放前面；如果b<a，return 负数，b放后面；如果b = a，return 0，位置不变
-  return b - a;
-});
-
-// 箭头函数自动return了
-arr.sort((a, b) => a - b);
