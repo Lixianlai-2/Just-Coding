@@ -17,6 +17,6 @@ let arr2 = arr.map(function (el, i) {
     arr.splice(i, 1, "周六");
   }
 
-  return arr[i];
+  return arr;
 });
-console.log(arr2); // ['周日', '周一', '周二', '周二', '周三', '周三', '周三', '周四', '周四', '周四', '周四','周六']
+console.log(arr); // ['周日', '周一', '周二', '周二', '周三', '周三', '周三', '周四', '周四', '周四', '周四','周六']
