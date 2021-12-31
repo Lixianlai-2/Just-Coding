@@ -20,3 +20,26 @@ arr.reduce(
   },
   { children: [], id: null } // 这个对象就是result的初始值
 );
+
+// ------------------------------
+
+// arr.reduce(
+//   (result, item) => {
+//     if (item.parent === null) {
+//       result.id = item.id;
+//       result["名称"] = item["名称"];
+//     } else {
+//       result.children.push(item);
+//       delete item.parent;
+//       item.children = null;
+//     }
+//     return result;
+//   },
+//   { id: null, children: [] }
+// );
+
+
+
+
+1.最近感觉怎么样
+2.

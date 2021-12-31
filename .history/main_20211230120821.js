@@ -5,18 +5,20 @@ let arr = [
 ];
 
 arr.reduce(
-  function (result, item) {
+  (result, item) => {
     if (item.parent === null) {
       result.id = item.id;
-      // 可以有更标准的写法result[''名称]
-      result.名称 = item.名称;
+      result["名称"] = item["名称"];
     } else {
       result.children.push(item);
       delete item.parent;
-      item.children = "null";
+      item.children = null;
     }
-
-    return result; // 注意
+    return result;
   },
-  { children: [], id: null } // 这个对象就是result的初始值
+  { id: null, children: [] }
 );
+
+
+// ------------------------------
+{id: 1, children:[{名称: '狗', id: 2, children: null},{名称: '猫', id: 3, children: null}], 名称: '动物'}
