@@ -13,4 +13,4 @@ let person2 = {
 person.sayHi();
 
 // 手动设置传输函数的对象
-person.sayHi.call(person2);
+person.sayHi.call(person);
