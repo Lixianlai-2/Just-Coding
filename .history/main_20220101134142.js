@@ -8,9 +8,7 @@ function fn() {
     function fn3() {
       console.log(china);
     }
-    fn3();
   }
-  fn2();
 }
 
 fn();

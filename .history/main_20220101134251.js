@@ -10,7 +10,6 @@ function fn() {
     }
     fn3();
   }
-  fn2();
 }
 
 fn();
