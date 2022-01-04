@@ -1,6 +1,0 @@
-let div1 = document.createElement("div");
-document.createElement("style");
-document.createElement("script");
-document.createElement("li");
-
-let text1 = document.createTextNode("你好");
