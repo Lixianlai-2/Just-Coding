@@ -1,0 +1,2 @@
+HTMLDivElement;
+HTMLElement;

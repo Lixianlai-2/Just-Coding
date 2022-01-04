@@ -1,13 +1,3 @@
-let div = document.createElement("div");
-test1.appendChild(div);
-test2.appendChild(div);
-
-test1.style.backgroundColor = "red";
-test1.style.fontSize = "100px";
-
-let div2 = test1.cloneNode(true);
-document.body.appendChild(div2);
-
 // let div1 = document.createElement("div");
 // document.createElement("style");
 // document.createElement("script");
@@ -21,3 +11,13 @@ document.body.appendChild(div2);
 
 // // document.body.appendChild(div1);
 // test.appendChild(div1);
+
+let div = document.createElement("div");
+test1.appendChild(div);
+test2.appendChild(div);
+
+test1.style.backgroundColor = "red";
+test1.style.fontSize = "100px";
+
+let div2 = test1.cloneNode(true);
+document.body.appendChild(div2);
