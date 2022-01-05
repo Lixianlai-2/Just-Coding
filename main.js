@@ -1,14 +1,14 @@
-let div = document.createElement("div");
-test1.appendChild(div);
-test2.appendChild(div);
+let firstChild = document.querySelector(".firstChild");
+console.log(firstChild);
 
-test1.style.backgroundColor = "red";
-test1.style.fontSize = "100px";
+let siblings = [];
 
-let div2 = test1.cloneNode(true);
-document.body.appendChild(div2);
+let c = firstChild.parentElement.children;
 
-// div.parentNode.removeChild(div);
-div.remove();
-div = null;
-test2.appendChild(div);
+for (let i = 0; i < c.length; i++) {
+  if (c[i] !== firstChild) {
+    siblings.push(c[i]);
+  }
+}
+
+console.log(siblings);
