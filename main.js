@@ -1,14 +1,13 @@
-let firstChild = document.querySelector(".firstChild");
-console.log(firstChild);
+let div = document.querySelector("div");
+console.log(div);
 
-let siblings = [];
-
-let c = firstChild.parentElement.children;
-
-for (let i = 0; i < c.length; i++) {
-  if (c[i] !== firstChild) {
-    siblings.push(c[i]);
+travel = (node, fn) => {
+  fn(node);
+  if (node.children) {
+    for (let i = 0; i < node.children; i++) {
+      travel(node.children[i], fn);
+    }
   }
-}
+};
 
-console.log(siblings);
+travel(div, (node) => console.log(node));
