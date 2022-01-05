@@ -1,13 +1,5 @@
-let div = document.querySelector("div");
-console.log(div);
+let div1 = document.querySelector("div");
 
-travel = (node, fn) => {
-  fn(node);
-  if (node.children) {
-    for (let i = 0; i < node.children; i++) {
-      travel(node.children[i], fn);
-    }
-  }
-};
-
-travel(div, (node) => console.log(node));
+div1.id = "Lixianlai";
+div1.x = "Lixianlai";
+div1.dataset.x = "Lixianlai";
