@@ -1,5 +1,27 @@
-div {
+div.grandpa {
+  border: 1px solid blue;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  background-color: rgb(88, 123, 59);
+}
+
+.father {
   border: 1px solid blue;
   width: 100px;
   height: 100px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.son {
+  border: 1px solid blue;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  background-color: aqua;
+}
+
+.x {
+  border: 10px solid black;
 }
