@@ -1,14 +1,14 @@
-let grandpa = document.querySelector(".grandpa");
-let father = document.querySelector(".father");
-let son = document.querySelector(".son");
+// let grandpa = document.querySelector(".grandpa");
+// let father = document.querySelector(".father");
+// let son = document.querySelector(".son");
 
-son.addEventListener("click", (Event) => {
-  const savedCurrentTarget = Event.currentTarget;
+// son.addEventListener("click", (Event) => {
+//   const savedCurrentTarget = Event.currentTarget;
 
-  setTimeout(() => {
-    console.log(Event.currentTarget);
-  }, 0);
-});
+//   setTimeout(() => {
+//     console.log(Event.currentTarget);
+//   }, 0);
+// });
 
 // 冒泡
 // son.addEventListener("click", (Event) => {
@@ -23,3 +23,21 @@ son.addEventListener("click", (Event) => {
 // grandpa.addEventListener("click", (Event) => {
 //   console.log("爷爷有打印出来吗");
 // });
+
+let container = document.querySelector(".container");
+
+container.addEventListener("wheel", (e) => {
+  // 这是阻止冒泡的
+  //   e.stopPropagation();
+
+  // 这是阻止默认事件发生的
+  e.preventDefault();
+});
+
+container.addEventListener("touchstart", (e) => {
+  // 这是阻止冒泡的
+  //   e.stopPropagation();
+
+  // 这是阻止默认事件发生的
+  e.preventDefault();
+});

@@ -25,3 +25,7 @@ div.grandpa {
 .x {
   border: 10px solid black;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
